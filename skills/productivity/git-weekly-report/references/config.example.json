@@ -1,0 +1,11 @@
+{
+  "timezone": "Asia/Shanghai",
+  "author_emails": [
+    "your.name@example.com"
+  ],
+  "output_directory": "/absolute/path/to/weekly-reports",
+  "repositories": [
+    "/absolute/path/to/service-a",
+    "/absolute/path/to/service-b"
+  ]
+}

@@ -254,5 +254,6 @@ General workflow tools, not code-specific.
 
 **Model-invoked**
 
+- **[git-weekly-report](./skills/productivity/git-weekly-report/SKILL.md)**: Generate personal weekly reports from local Git commits, grouped by service and module with timestamps and traceable evidence.
 - **[grilling](./skills/productivity/grilling/SKILL.md)**: Interview the user relentlessly about a plan, decision, or idea until every branch of the design tree is resolved. The reusable interview primitive behind `grill-me`, `grill-with-docs`, `triage`, `wayfinder` and `improve-codebase-architecture`.
 - **[writing-for-agents](./skills/productivity/writing-for-agents/SKILL.md)**: Writing documents for agents: skills, AGENTS.md/CLAUDE.md, and any doc an agent reaches by a pointer.
