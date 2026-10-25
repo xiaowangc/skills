@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document Co-Authoring"
+  short_description: "Co-author substantial documents and test them with fresh readers"
+  default_prompt: "Use $doc-coauthoring to help me develop and validate this document."

@@ -18,4 +18,6 @@ Model- or user-reachable (rich trigger phrasing so the model can reach for them)
 
 - **[git-weekly-report](./git-weekly-report/SKILL.md)**: Generate a personal weekly report from local Git history, grouped by service and module with timestamps and commit evidence.
 - **[grilling](./grilling/SKILL.md)**: Interview the user relentlessly about a plan, decision, or idea until every branch of the design tree is resolved.
+- **[doc-coauthoring](./doc-coauthoring/SKILL.md)**: Co-author substantial human-facing documents, close consequential context gaps, and test the result with a fresh reader.
+- **[dingtalk-docs](./dingtalk-docs/SKILL.md)**: Create, format, and maintain DingTalk online documents through the official document MCP.
 - **[writing-for-agents](./writing-for-agents/SKILL.md)**: Writing documents for agents: skills, AGENTS.md/CLAUDE.md, and any doc an agent reaches by a pointer.

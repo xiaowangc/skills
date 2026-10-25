@@ -51,6 +51,14 @@ Every step ends on a **completion criterion**, the condition that tells the agen
 
 The strongest criteria are both checkable and exhaustive.
 
+## Fresh-context reader testing
+
+For an agent-facing document that is high-impact, reused across tasks, or already known to be misread, test behaviour in a fresh context. Give one fresh subagent only the document and three to five realistic tasks it should enable. Do not give it the author conversation, expected answers, suspected failure, or intended fix.
+
+Record where the reader cannot select the correct branch, locate an operative rule, distinguish required from optional behaviour, or determine that a step is complete. Revise the smallest passage that owns each failure and retest the affected tasks. Stop after one clean pass; if the same failure survives two repair rounds, report the missing decision or context instead of accumulating more wording.
+
+This is a behavioural test, not a style review. A reader reproducing preferred phrases proves nothing; it must make the right decision from the document alone.
+
 ## When to split
 
 Splitting one document into two spends one of the two loads, so split only when the cut earns it:

@@ -233,6 +233,7 @@ Skills I use daily for code work.
 - **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or several radically different UI variations toggleable from one route.
 - **[diagnosing-bugs](./skills/engineering/diagnosing-bugs/SKILL.md)**: Disciplined diagnosis loop for hard bugs and performance regressions: build a feedback loop that goes red on this bug → minimise → hypothesise → instrument → fix → regression-test.
 - **[research](./skills/engineering/research/SKILL.md)**: Investigate a question against high-trust primary sources and capture the findings as a cited Markdown file in the repo, run as a background agent.
+- **[production-agent-design](./skills/engineering/production-agent-design/SKILL.md)**: Design or review production-grade AI agent systems across architecture, autonomy, tools, context, memory, security, evaluation, observability, release gates, and AgentOps.
 - **[tdd](./skills/engineering/tdd/SKILL.md)**: Test-driven development with a red-green-refactor loop. Builds features or fixes bugs one vertical slice at a time.
 - **[domain-modeling](./skills/engineering/domain-modeling/SKILL.md)**: Actively build and sharpen a project's domain model: challenge terms against the glossary, stress-test with edge-case scenarios, and update `GLOSSARY.md` and ADRs inline.
 - **[codebase-design](./skills/engineering/codebase-design/SKILL.md)**: Shared discipline and vocabulary for designing deep modules: a lot of behaviour behind a small interface, placed at a clean seam, testable through that interface.
@@ -256,4 +257,6 @@ General workflow tools, not code-specific.
 
 - **[git-weekly-report](./skills/productivity/git-weekly-report/SKILL.md)**: Generate personal weekly reports from local Git commits, grouped by service and module with timestamps and traceable evidence.
 - **[grilling](./skills/productivity/grilling/SKILL.md)**: Interview the user relentlessly about a plan, decision, or idea until every branch of the design tree is resolved. The reusable interview primitive behind `grill-me`, `grill-with-docs`, `triage`, `wayfinder` and `improve-codebase-architecture`.
+- **[doc-coauthoring](./skills/productivity/doc-coauthoring/SKILL.md)**: Co-author substantial human-facing documents, close consequential context gaps, and test the result with a fresh reader.
+- **[dingtalk-docs](./skills/productivity/dingtalk-docs/SKILL.md)**: Create, format, and maintain DingTalk online documents through the official document MCP.
 - **[writing-for-agents](./skills/productivity/writing-for-agents/SKILL.md)**: Writing documents for agents: skills, AGENTS.md/CLAUDE.md, and any doc an agent reaches by a pointer.

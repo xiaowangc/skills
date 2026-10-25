@@ -73,7 +73,7 @@ In VS Code, run **Chat: Install Plugin From Source** and enter `https://github.c
 
 ## Gemini CLI
 
-Gemini doesn't read `.claude-plugin`, and `--path` takes one bucket. One install per promoted bucket gives exactly the promoted set (27 skills, verified 2026-10-07).
+Gemini doesn't read `.claude-plugin`, and `--path` takes one bucket. One install per promoted bucket gives exactly the promoted set (31 skills, verified 2026-10-25).
 
 <canonical-block name="gemini">
 

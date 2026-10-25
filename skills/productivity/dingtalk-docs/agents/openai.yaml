@@ -1,0 +1,4 @@
+interface:
+  display_name: "DingTalk Documents"
+  short_description: "Write and manage DingTalk docs through the official MCP"
+  default_prompt: "Use $dingtalk-docs to create or improve this DingTalk document safely."

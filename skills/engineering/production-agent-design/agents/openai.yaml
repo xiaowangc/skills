@@ -1,0 +1,4 @@
+interface:
+  display_name: "生产级智能体设计指南"
+  short_description: "面向业务的生产级智能体架构、质量、安全与运营设计指南"
+  default_prompt: "使用 $production-agent-design 为当前业务设计一套可生产落地的智能体方案。"

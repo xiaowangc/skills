@@ -26,6 +26,7 @@ Once you think in these two loads, most authoring decisions (split or don't, inl
 - **[Context pointers](https://www.aihero.dev/ai-coding-dictionary/context-pointer)**: the reference held in context that names out-of-context material and encodes when to reach it. A skill description and an `AGENTS.md` line naming a doc are the same thing. The pointer's *wording*, not its target, decides how reliably the agent follows it.
 - **Information hierarchy**: the ladder from in-file step, to in-file reference, to disclosed reference behind a pointer. **[Progressive disclosure](https://www.aihero.dev/ai-coding-dictionary/progressive-disclosure)** is moving material down that ladder so the top stays easy to read.
 - **Completion criteria**: how clear and demanding each step's done-condition is, and the **legwork** that demand causes. They are the defence against **premature completion**.
+- **Fresh-context reader testing**: give a fresh subagent only the document and realistic tasks, then check whether it can choose the right branch, locate operative rules and know when the work is complete without borrowing the author's intent.
 - **Leading words**: a compact concept already in the model's pretraining (*tight*, *red*, *tracer bullet*) that the agent thinks with while running the document. It works in two places. In the body it guides execution, and in the pointer it triggers invocation.
 - **Pruning**: single source of truth, relevance, and the no-op test applied sentence by sentence, against **duplication**, **sediment** and **sprawl**.
 
@@ -44,7 +45,7 @@ You can, and it will produce something verbose. Left alone the model explains wh
 Agents told to "streamline" optimise for length, because length is the thing they can see. The no-op test checks behaviour, not style: delete the line and ask whether the agent's behaviour changed. When a sentence fails, delete the whole sentence rather than trim words from it, and settle a disagreement about it by running the document, not by arguing.
 
 **How do I know when it's done?**
-When it works, and you can no longer find duplication, sediment or no-ops. There is no automated eval. You check by running the document by hand and using the failure-mode vocabulary to diagnose problems. When a document misbehaves, the same vocabulary helps you fix it: name the failure mode first, then fix that.
+When it works, and you can no longer find duplication, sediment or no-ops. For a high-impact or repeatedly misread document, give one fresh subagent only the document and three to five realistic tasks. If it cannot choose the right branch, locate a rule or identify the completion condition, revise the smallest passage that owns the failure and retest. This is a behavioural check, not an automated style score.
 
 **Should this live in `CLAUDE.md` or somewhere else?**
 Ask which load you want to pay. `CLAUDE.md` loads into every [session](https://www.aihero.dev/ai-coding-dictionary/session) unconditionally. Material behind a pointer costs only the pointer's own line until it fires. Anything that applies in one session out of ten costs context load in the other nine.
@@ -64,6 +65,7 @@ No. Finding the word that packs the most behaviour into the fewest [tokens](http
 - You can point at a leading word and see it change the agent's behaviour in more than one place.
 - Nothing is stated twice, in any form. Duplication is the most reliable sign a document was never tested.
 - Reference that only one branch needs sits behind a pointer rather than in the main file.
+- A fresh reader can perform the document's real tasks without seeing the author conversation or expected answer.
 
 ## Where it fits
 
